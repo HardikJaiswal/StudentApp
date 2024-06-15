@@ -36,7 +36,7 @@ namespace StudentApp.Web
             });
             var connection = Configuration.GetConnectionString("DefaultConnection");
             SqlServerBootstrap.Initialize();
-            services.AddSingleton<IUIService>(new UIService(new DbService(connection)));
+            services.AddSingleton<IStudentService>(new StudentService(new DbService(connection)));
             // In production, the React files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {

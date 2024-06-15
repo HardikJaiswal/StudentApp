@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using StudentApp.Concerns;
 using StudentApp.Contracts;
-using System.Collections.Generic;
 
 namespace StudentApp.Web.Controllers
 {
